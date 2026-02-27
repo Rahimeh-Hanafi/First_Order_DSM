@@ -110,9 +110,16 @@ A coherent sine tone is generated:
 The DSM follows the discrete-time loop:
 
 \[
-v[n] = v[n-1] + (x[n] - y[n-1]), \quad y[n] = Q(v[n])
+e[n] = x[n] - y[n-1]
+\]
+\[
+v[n] = v[n-1] + e[n]
+\]
+\[
+y[n] = Q\!\left(v[n]\right)
 \]
 
+where \(x[n]\) is the input, \(v[n]\) is the integrator state, \(y[n]\) is the quantized output, and \(Q(\cdot)\) is the quantizer.
 **Why this structure?**
 - Standard first-order DSM topology:
   - Integrator accumulates error
