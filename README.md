@@ -1,4 +1,4 @@
-# First-Order Delta–Sigma Modulator (DSM) Simulation + Digital Decimation (Python)
+# First-Order Delta–Sigma Modulator (DSM) 
 
 This repository contains a **from-scratch, single-file Python** implementation of a **first-order Delta–Sigma Modulator (DSM)** with:
 
